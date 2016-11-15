@@ -43,17 +43,16 @@
 
 
 -(void)imageTapped:(UITapGestureRecognizer*)sender {
-    
-    CGPoint touchPoint = [sender locationInView:self.view];
+    CGPoint touchPoint = [sender locationInView:self.scrollView];
     if ([self.image1 pointInside:touchPoint withEvent:UIEventTypeTouches]) {
         self.selectedImage = [self.image1 image];
-    } else if ([self.image2 pointInside:touchPoint withEvent:UIEventTypeTouches]) {
+    } else if ([self.image2 pointInside:[self.scrollView convertPoint:touchPoint toView:self.image2] withEvent:UIEventTypeTouches]) {
         self.selectedImage = [self.image2 image];
     } else {
         self.selectedImage = [self.image3 image];
     }
     
-    //[self prepareForSegue:<#(nonnull UIStoryboardSegue *)#> sender:<#(nullable id)#>]
+    
     [self performSegueWithIdentifier:@"detailedSegue" sender:sender];
 }
 
