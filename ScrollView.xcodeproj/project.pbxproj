@@ -13,6 +13,11 @@
 		7417ED5C1DDA678E00AF2D6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7417ED5A1DDA678E00AF2D6F /* Main.storyboard */; };
 		7417ED5E1DDA678E00AF2D6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7417ED5D1DDA678E00AF2D6F /* Assets.xcassets */; };
 		7417ED611DDA678E00AF2D6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7417ED5F1DDA678E00AF2D6F /* LaunchScreen.storyboard */; };
+		7417ED691DDA69FD00AF2D6F /* Lighthouse-in-Field.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7417ED681DDA69FD00AF2D6F /* Lighthouse-in-Field.jpg */; };
+		7417ED6B1DDA6A0800AF2D6F /* Lighthouse-night.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7417ED6A1DDA6A0800AF2D6F /* Lighthouse-night.jpg */; };
+		7417ED6D1DDA6A1100AF2D6F /* Lighthouse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7417ED6C1DDA6A1100AF2D6F /* Lighthouse.jpg */; };
+		7417ED711DDA714100AF2D6F /* tux.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7417ED701DDA714100AF2D6F /* tux.jpg */; };
+		7417ED741DDA792700AF2D6F /* ZoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7417ED731DDA792700AF2D6F /* ZoomViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,12 @@
 		7417ED5D1DDA678E00AF2D6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7417ED601DDA678E00AF2D6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7417ED621DDA678E00AF2D6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7417ED681DDA69FD00AF2D6F /* Lighthouse-in-Field.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Lighthouse-in-Field.jpg"; path = "../../../../../Downloads/ScrollView-Images-master/Images.xcassets/Lighthouse-in-Field.imageset/Lighthouse-in-Field.jpg"; sourceTree = "<group>"; };
+		7417ED6A1DDA6A0800AF2D6F /* Lighthouse-night.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Lighthouse-night.jpg"; path = "../../../../../Downloads/ScrollView-Images-master/Images.xcassets/Lighthouse-night.imageset/Lighthouse-night.jpg"; sourceTree = "<group>"; };
+		7417ED6C1DDA6A1100AF2D6F /* Lighthouse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Lighthouse.jpg; path = "../../../../../Downloads/ScrollView-Images-master/Images.xcassets/Lighthouse-zoomed.imageset/Lighthouse.jpg"; sourceTree = "<group>"; };
+		7417ED701DDA714100AF2D6F /* tux.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tux.jpg; path = ../../../../../Downloads/tux.jpg; sourceTree = "<group>"; };
+		7417ED721DDA792700AF2D6F /* ZoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomViewController.h; sourceTree = "<group>"; };
+		7417ED731DDA792700AF2D6F /* ZoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoomViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +78,8 @@
 				7417ED5F1DDA678E00AF2D6F /* LaunchScreen.storyboard */,
 				7417ED621DDA678E00AF2D6F /* Info.plist */,
 				7417ED511DDA678E00AF2D6F /* Supporting Files */,
+				7417ED721DDA792700AF2D6F /* ZoomViewController.h */,
+				7417ED731DDA792700AF2D6F /* ZoomViewController.m */,
 			);
 			path = ScrollView;
 			sourceTree = "<group>";
@@ -74,6 +87,10 @@
 		7417ED511DDA678E00AF2D6F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7417ED681DDA69FD00AF2D6F /* Lighthouse-in-Field.jpg */,
+				7417ED6A1DDA6A0800AF2D6F /* Lighthouse-night.jpg */,
+				7417ED701DDA714100AF2D6F /* tux.jpg */,
+				7417ED6C1DDA6A1100AF2D6F /* Lighthouse.jpg */,
 				7417ED521DDA678E00AF2D6F /* main.m */,
 			);
 			name = "Supporting Files";
@@ -110,6 +127,7 @@
 				TargetAttributes = {
 					7417ED4D1DDA678E00AF2D6F = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = E44M545Q67;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -139,7 +157,11 @@
 			files = (
 				7417ED611DDA678E00AF2D6F /* LaunchScreen.storyboard in Resources */,
 				7417ED5E1DDA678E00AF2D6F /* Assets.xcassets in Resources */,
+				7417ED6B1DDA6A0800AF2D6F /* Lighthouse-night.jpg in Resources */,
+				7417ED6D1DDA6A1100AF2D6F /* Lighthouse.jpg in Resources */,
 				7417ED5C1DDA678E00AF2D6F /* Main.storyboard in Resources */,
+				7417ED691DDA69FD00AF2D6F /* Lighthouse-in-Field.jpg in Resources */,
+				7417ED711DDA714100AF2D6F /* tux.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +175,7 @@
 				7417ED591DDA678E00AF2D6F /* ViewController.m in Sources */,
 				7417ED561DDA678E00AF2D6F /* AppDelegate.m in Sources */,
 				7417ED531DDA678E00AF2D6F /* main.m in Sources */,
+				7417ED741DDA792700AF2D6F /* ZoomViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +295,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E44M545Q67;
 				INFOPLIST_FILE = ScrollView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ta.ScrollView;
@@ -283,6 +307,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E44M545Q67;
 				INFOPLIST_FILE = ScrollView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ta.ScrollView;

@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "ZoomViewController.h"
 
 @interface ViewController ()
+
+@property UIImage *selectedImage;
+
+@property UITapGestureRecognizer *tapRecog;
 
 @end
 
@@ -16,6 +21,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.tapRecog = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageTapped:)];
+    [self.view addGestureRecognizer:self.tapRecog];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -25,5 +32,29 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    ZoomViewController *destVC = (ZoomViewController *)[segue destinationViewController] ;
+    
+    // Pass the selected object to the new view controller.
+    
+    destVC.selectedImage = self.selectedImage;
+}
+
+
+
+-(void)imageTapped:(UITapGestureRecognizer*)sender {
+    
+    CGPoint touchPoint = [sender locationInView:self.view];
+    if ([self.image1 pointInside:touchPoint withEvent:UIEventTypeTouches]) {
+        self.selectedImage = [self.image1 image];
+    } else if ([self.image2 pointInside:touchPoint withEvent:UIEventTypeTouches]) {
+        self.selectedImage = [self.image2 image];
+    } else {
+        self.selectedImage = [self.image3 image];
+    }
+    
+    //[self prepareForSegue:<#(nonnull UIStoryboardSegue *)#> sender:<#(nullable id)#>]
+    [self performSegueWithIdentifier:@"detailedSegue" sender:sender];
+}
 
 @end

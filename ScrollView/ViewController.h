@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIScrollViewDelegate>
 
+
+@property (weak, nonatomic) IBOutlet UIImageView *image1;
+@property (weak, nonatomic) IBOutlet UIImageView *image2;
+@property (weak, nonatomic) IBOutlet UIImageView *image3;
+
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+
+-(void)imageTapped:(UITapGestureRecognizer*)sender;
 
 @end
 
